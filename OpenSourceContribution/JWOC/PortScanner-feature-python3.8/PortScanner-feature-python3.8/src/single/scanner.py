@@ -13,12 +13,10 @@ subprocess.call('cls', shell=True)
 remoteServer = input("Enter a remote host to scan: ")
 remoteServerIP = socket.gethostbyname(remoteServer)
 
-
 # Print a nice banner with information on which host we are about to scan
 print("-" * 60)
 print("Please wait, scanning remote host....", remoteServerIP)
 print("-" * 60)
-
 
 # Pull port range from config.json
 def get_absolute_path(relative_path):
@@ -29,7 +27,6 @@ def get_absolute_path(relative_path):
     absolute_path = os.path.join(new, *split_path)
     return absolute_path
 
-
 # Check what time the scan started
 t1 = datetime.now()
 
@@ -37,7 +34,6 @@ with open(get_absolute_path('/config.json')) as config_file:
     config = json.load(config_file)
     loRange = int(config['range']['low'])
     hiRange = int(config['range']['high'])
-
 
 # scanning the port in range specified in config.json
 try:
