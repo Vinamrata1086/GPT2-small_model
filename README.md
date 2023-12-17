@@ -15,7 +15,7 @@ The GPT-2 model is a transformer-based language model that can generate coherent
 The code is organized as follows:
 
 - `gpt2.py`: This file contains the main code for defining and instantiating the GPT-2 model class, as well as the transformer layer, the multi-head attention layer, and the feed-forward network classes. The file also contains a function to load the GPT-2 125M model checkpoints and a function to generate text using the model.
-- `gpt2-pytorch_model.bin`: This file contains the pre-trained weights of the GPT-2 125M model, downloaded from here.
+- `gpt2-pytorch_model.bin`: This file contains the pre-trained weights of the GPT-2 125M model.
 - `README.md`: This file contains the documentation and instructions for using the code.
 
 ## Usage
